@@ -1,0 +1,41 @@
+universe = vanilla
+
+Process = 17
+
+Requirements    = HAS_SINGULARITY == TRUE
+request_cpus    = 1
+request_memory  = 1 GB
+request_disk    = 4 GB
+
+
+OSDF_LOCATION = osdf:///ospool/uc-shared/public/UCDenver_Roberts
+OSDF_DATA = osdf:///ospool/ap21/data/derkula
+
++SingularityImage = "osdf:///ospool/uc-shared/public/UCDenver_Roberts/container/cdms4.0.sif"
+
+
+#s3_access_key_id_file = s3.access
+#s3_secret_access_key_file = s3.secret
+
+
+executable = rclone.sh
+
+transfer_input_files    = env.sh
+#transfer_input_files    = env.sh, $(OSDF_LOCATION)/cdmsbats_work?recursive
+#transfer_output_files   = umn_Filter_07180909_2316.root, umn_07180909_2316_F0001.root
+#transfer_output_remaps  = "umn_Filter_07180909_2316.root = $(OSDF_DATA)/outputs/noise/umn_Filter_07180909_2316.root; umn_07180909_2316_F0001.root = $(OSDF_DATA)/outputs/raw/umn_07180909_2316_F0001.root"
+
+log    = log/$(Process).log
+error  = error/$(Process).error
+output = output/$(Process).output
+
+# This is the default category for jobs
++JobDurationCategory = "Medium"
+
+# The below are good base requirements for first testing jobs on OSG, 
+#  if you don't have a good idea of memory and disk usage.
+
+
+# The last line of a submit file indicates how many jobs of the above
+#  description should be queued. We'll start with one job.
+queue 1

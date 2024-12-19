@@ -1,4 +1,4 @@
-# UCD-OSG
+# Create an Account and SSH into the OS Pool
 Starter Guide for OS Pool and description
 
 <h3>Setup </h3>
@@ -13,5 +13,3 @@ SSH into the OSG access point
 ```bash
 ssh 'username'@ap21.uc.osg-htc.org
 ```
-
-Always refer to the [OSPool Documentation](https://portal.osg-htc.org/documentation/)

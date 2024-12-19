@@ -1,0 +1,49 @@
+# CDMSBATS workflow for running a single job
+# Written by Dennis Pradhan dennis.pradhan@ucdenver.edu
+# Hard coded submit file to run BatNoise processing for one data set
+
+
+universe = vanilla
+
+Process = 001
+
+# Initialize resources
+
+# The below are good base requirements for first testing jobs on OSG, 
+#  if you don't have a good idea of memory and disk usage.
+
+Requirements    = HAS_SINGULARITY == TRUE
+request_cpus    = 1
+request_memory  = 1 GB
+request_disk    = 4 GB
+
+# OSDF shortcuts
+OSDF_LOCATION = osdf:///ospool/uc-shared/public/UCDenver_Roberts
+OSDF_DATA = osdf:///ospool/ap21/data/derkula
+
+# Access container
++SingularityImage = "osdf:///ospool/uc-shared/public/UCDenver_Roberts/container/cdms2.0.sif"
+
+# Utilize command .sh file
+executable = test.sh
+
+#Transfer neccessary Job Files
+transfer_input_files    = env.sh
+transfer_input_files    = env.sh, $(OSDF_LOCATION)/cdmsbats_work?recursive, $(OSDF_LOCATION)/data_sets/07180909_2316_F0002.mid.gz
+
+# Designate output files path
+transfer_output_files   = umn_Filter_07180909_2316.root
+transfer_output_remaps  = "umn_Filter_07180909_2316.root = $(OSDF_DATA)/outputs/umn_Filter_07180909_2316.root"
+
+# Post job details
+log    = logs/$(Process).log
+error  = logs/$(Process).error
+output = logs/$(Process).output
+
+# This is the default category for jobs
++JobDurationCategory = "Medium"
+
+
+# The last line of a submit file indicates how many jobs of the above
+#  description should be queued. We'll start with one job.
+queue 1
