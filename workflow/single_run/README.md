@@ -16,10 +16,19 @@ The container and data set is found on the shared OSDF location
 /ospool/uc-shared/public/UCDenver_Roberts
 ```
 
+To submit this job, run the following commands from the OSPool access point's directory you place these files in:
+
+```bash
+condor_submit single.submit
+
+#View Job Status
+condor_q
+condor_watch_q
+```
 
 This job is hard coded to run BatNoise with the following setup:
 
-Container: [cdmsbats2.0.sif](https://github.com/Derkula/UCD-OSN-/blob/main/Containers.md)
+Container: [cdmsbats2.0.sif](https://github.com/Derkula/UCD-OSN/tree/main/containers)
 
 Processing File: processingUMNData.HV100mm_HV1.midas
 
