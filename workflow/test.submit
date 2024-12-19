@@ -14,11 +14,7 @@ OSDF_DATA = osdf:///ospool/ap21/data/derkula
 +SingularityImage = "osdf:///ospool/uc-shared/public/UCDenver_Roberts/container/cdms4.0.sif"
 
 
-#s3_access_key_id_file = s3.access
-#s3_secret_access_key_file = s3.secret
-
-
-executable = rclone.sh
+executable = test.sh
 
 transfer_input_files    = env.sh
 #transfer_input_files    = env.sh, $(OSDF_LOCATION)/cdmsbats_work?recursive

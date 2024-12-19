@@ -25,11 +25,10 @@ OSDF_DATA = osdf:///ospool/ap21/data/derkula
 +SingularityImage = "osdf:///ospool/uc-shared/public/UCDenver_Roberts/container/cdms2.0.sif"
 
 # Utilize command .sh file
-executable = test.sh
+executable = job.sh
 
 #Transfer neccessary Job Files
-transfer_input_files    = env.sh
-transfer_input_files    = env.sh, $(OSDF_LOCATION)/cdmsbats_work?recursive, $(OSDF_LOCATION)/data_sets/07180909_2316_F0002.mid.gz
+transfer_input_files    = env.sh, $(OSDF_LOCATION)/cdmsbats_work?recursive
 
 # Designate output files path
 transfer_output_files   = umn_Filter_07180909_2316.root
