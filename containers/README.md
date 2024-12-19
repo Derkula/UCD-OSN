@@ -1,3 +1,4 @@
+Information about the public CDMS UMN Data bucket is here: [nsdf-slac](https://github.com/nsdf-fabric/nsdf-slac)
 ### cdms.sif
 Initial container built with ROOT
 Using this container requires sourcing the environment variables from an external directiory. which normally is the UMNDev branch of the CDMSBATS repository on gitlab.
@@ -9,10 +10,8 @@ Using this container allows sourcing environment variables from the container's 
 This is the ideal container for running simple jobs on the OS Pool
 
 ### cdms3.0.sif 
-https://github.com/nsdf-fabric/nsdf-slac
 Third build, with built in environment variables, and rclone installed
 The purpose of this container is to pull data sets from the public UMN bucket, then process that data set.
-Information about this is [here]()
 
 <b>Not working.</b>
 The config directories for rclone were not built properly, and cdms3.0.sif will need to be rebuilt in necessary
