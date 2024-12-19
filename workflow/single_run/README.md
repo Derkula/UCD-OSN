@@ -8,7 +8,7 @@ to use these files, scp transfer them into your home directory on an OSPool acce
 You will not be logged into the access point to do this 
 
 ```
-scp 'filename.sh' u'sername'@ap21.uc.osg-htc.org:/home/'username'/single_run/
+scp 'filename.sh' 'username'@ap21.uc.osg-htc.org:/home/'username'/single_run/
 ```
 
 The container and data set is found on the shared OSDF location
