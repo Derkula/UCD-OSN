@@ -1,4 +1,11 @@
 Information about the public CDMS UMN Data bucket is here: [nsdf-slac](https://github.com/nsdf-fabric/nsdf-slac)
+
+The individual build instructions for each version is over simplified, but detailed instructions to build the containers can be found here: [UMNdev](https://gitlab.com/supercdms/Reconstruction/cdmsbats/-/tree/UMNdev?ref_type=heads)
+
+For all builds, you will need to clone the UMNdev branch into the build directory
+
+The definition file is equipped with cdms environment variable setup, but is currently omitted while these variables are prone to change depending on the condor job's purpose 
+
 ### cdms.sif
 Initial container built with ROOT
 Using this container requires sourcing the environment variables from an external directiory. which normally is the UMNDev branch of the CDMSBATS repository on gitlab.
@@ -7,7 +14,7 @@ Using this container requires sourcing the environment variables from an externa
 Second build, with the UMNDev branch built into the container
 Using this container allows sourcing environment variables from the container's internal directory.
 
-This is the ideal container for running simple jobs on the OS Pool
+This is the ideal container for running simple jobs on the OS Pool, currently the newer version are unstable, and not built with ROOT.
 
 ### cdms3.0.sif 
 Third build, with built in environment variables, and rclone installed

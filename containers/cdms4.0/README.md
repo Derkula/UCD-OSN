@@ -1,4 +1,4 @@
-Singularity version 3.0 to include rclone.
+Singularity version 4.0 to include awscli.
 
 The purpose is to access the public CDMS UMN data.
 
@@ -9,7 +9,7 @@ Building ROOT is omitted for the sake of saving time to test the s3 function.
 
 Clone the [UMNdev](https://gitlab.com/supercdms/Reconstruction/cdmsbats/-/tree/UMNdev?ref_type=heads) branch of the cdmsbats reconstruction repository.
 
-make sure the .config/rclone/rclone.conf directory is present
+Ensure the .aws folder is present
 
 build the container
 ```bash

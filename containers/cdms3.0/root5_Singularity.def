@@ -15,7 +15,7 @@ From: ubuntu:18.04
 
 %files
 ## copy cdmsbats into image
-     cdmsbats_old/cdmsbats_singularity /cdmsbats_singularity 
+     cdmsbats /cdmsbats_singularity 
 
 %environment
     export ROOTSYS=/usr/local
