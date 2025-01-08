@@ -1,0 +1,30 @@
+Start time: Tue Jan  7 22:44:11 CST 2025
+Job is running on node: c2005.swan.hcc.unl.edu
+Job running as user: uid=32016(osg) gid=4001(grid) groups=4001(grid)
+Job is running in directory: /srv
+running Data
+cdmsbats version: v5.6.5-25-g35800ef31d41dbc8d1dc83b4d25a4a89d30b194c
+BatCommon version: v5.7.3-14-g98440456a4ecd655d40026869c24e81d1c2c080e
+RawDataFilename = 8_F5000
+BatNoise::main() ERROR! series prefix is unrecognized
+Noise complete, saved to
+/srv
+_condor_stderr
+_condor_stdout
+cdms4.0.sif
+env.sh
+scratch
+test.sh
+tmp
+var_tmp
+Done writing output
+/srv
+_condor_stderr
+_condor_stdout
+cdms4.0.sif
+env.sh
+scratch
+test.sh
+tmp
+var_tmp
+end script

@@ -1,0 +1,55 @@
+000 (16923670.000.000) 2025-01-07 23:49:38 Job submitted from host: <192.170.231.142:9618?addrs=192.170.231.142-9618+[2605-9a00-10-200b-192-170-231-142]-9618&alias=ap21.uc.osg-htc.org&noUDP&sock=schedd_1761324_5782>
+...
+040 (16923670.000.000) 2025-01-07 23:53:18 Started transferring input files
+	Transferring to host: <10.125.8.26:44705?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-b5-97ed-32e2-a34b-c9a3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector1#56271323%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-6dee]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector7#15402921&PrivNet=node1811.palmetto.clemson.edu&addrs=10.125.8.26-44705&alias=node1811.palmetto.clemson.edu&noUDP>
+...
+040 (16923670.000.000) 2025-01-07 23:53:56 Finished transferring input files
+...
+021 (16923670.000.000) 2025-01-07 23:53:57 Message from starter on slot1_8@glidein_387611_81839547@node1811.palmetto.clemson.edu:
+	PREPARE_JOB (prepare-hook) succeeded (reported status 000): Using Singularity image cdms3.0.sif
+...
+001 (16923670.000.000) 2025-01-07 23:53:57 Job executing on host: <10.125.8.26:39419?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-b5-97ed-32e2-a34b-c9a3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector1#56269207%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-6dee]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector5#15352485&PrivNet=node1811.palmetto.clemson.edu&addrs=10.125.8.26-39419&alias=node1811.palmetto.clemson.edu&noUDP>
+	SlotName: slot1_8@node1811.palmetto.clemson.edu
+	CondorScratchDir = "/local_scratch/slurm.1543815/glide_Fv3nom/execute/dir_446364"
+	Cpus = 1
+	Disk = 4195328
+	GLIDEIN_ResourceName = "Clemson-Palmetto-CE1"
+	GPUs = 0
+	Memory = 1024
+...
+006 (16923670.000.000) 2025-01-07 23:54:07 Image size of job updated: 2940568
+	74  -  MemoryUsage of job (MB)
+	74820  -  ResidentSetSize of job (KB)
+...
+040 (16923670.000.000) 2025-01-07 23:54:47 Started transferring output files
+...
+040 (16923670.000.000) 2025-01-07 23:54:49 Finished transferring output files
+...
+021 (16923670.000.000) 2025-01-07 23:54:49 Error from starter on slot1_8@glidein_387611_81839547@node1811.palmetto.clemson.edu:
+	STARTER at 10.125.8.26 failed to send file(s) to <192.170.231.142:9618>: : FILETRANSFER:1:non-zero exit (1) from /local_scratch/slurm.1543815/glide_Fv3nom/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /local_scratch/slurm.1543815/glide_Fv3nom/execute/dir_446364/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Clemson-Palmetto) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )|; SHADOW failed to receive file(s) from <205.186.62.252:30074>
+	Code 13 Subcode 256
+...
+004 (16923670.000.000) 2025-01-07 23:54:49 Job was evicted. Code 12 Subcode 256
+	(0) CPU times
+		Usr 0 00:00:22, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	3832507  -  Run Bytes Sent By Job
+	2668  -  Run Bytes Received By Job
+	Reason: Transfer output files failure at the execution point using protocol osdf. Details: Pelican Client Error: stat /local_scratch/slurm.1543815/glide_Fv3nom/execute/dir_446364/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Clemson-Palmetto) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )|
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  2491342  4194304   4195328 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       74     1024      1024 
+	   TimeExecute (s)      :       50                    
+	   TimeSlotBusy (s)     :       92                    
+...
+012 (16923670.000.000) 2025-01-07 23:54:49 Job was held.
+	Transfer output files failure at the execution point using protocol osdf. Details: Pelican Client Error: stat /local_scratch/slurm.1543815/glide_Fv3nom/execute/dir_446364/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Clemson-Palmetto) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )|
+	Code 12 Subcode 256
+...
+009 (16923670.000.000) 2025-01-08 00:02:44 Job was aborted.
+	via condor_rm (by user derkula)
+
+	Job terminated by itself at 2025-01-08T05:54:47Z (using method 0: OF_ITS_OWN_ACCORD).
+...

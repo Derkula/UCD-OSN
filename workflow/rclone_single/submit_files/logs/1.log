@@ -1,0 +1,187 @@
+000 (16923660.000.000) 2025-01-07 22:35:39 Job submitted from host: <192.170.231.142:9618?addrs=192.170.231.142-9618+[2605-9a00-10-200b-192-170-231-142]-9618&alias=ap21.uc.osg-htc.org&noUDP&sock=schedd_1761324_5782>
+...
+040 (16923660.000.000) 2025-01-07 22:36:43 Started transferring input files
+	Transferring to host: <10.32.86.119:38241?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-b5-97ed-32e2-a34b-c9a3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector10#34787602%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-6dee]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector10#15344085&PrivNet=d12chas562.crc.nd.edu&addrs=10.32.86.119-38241&alias=d12chas562.crc.nd.edu&noUDP>
+...
+040 (16923660.000.000) 2025-01-07 22:39:07 Finished transferring input files
+...
+040 (16923660.000.000) 2025-01-07 22:39:08 Started transferring output files
+...
+040 (16923660.000.000) 2025-01-07 22:39:08 Finished transferring output files
+...
+021 (16923660.000.000) 2025-01-07 22:39:08 Error from starter on slot1_5@glidein_744632_320311606@d12chas562.crc.nd.edu:
+	Failed to transfer files: SHADOW at 192.170.231.142 failed to send file(s) to <129.74.145.119:47984>: |Error: reading from file /home/derkula/cont5.0/env.sh: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.170.231.142:9618>
+	Code 13 Subcode 2
+...
+004 (16923660.000.000) 2025-01-07 22:39:08 Job was evicted. Code 13 Subcode 2
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	1340  -  Run Bytes Received By Job
+	Reason: Transfer input files failure at access point ap21 while sending files to the execution point. Details: reading from file /home/derkula/cont5.0/env.sh: (errno 2) No such file or directory
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  2142848  4194304   4196077 
+	   GPUs                 :                           0 
+	   Memory (MB)          :              1024      1024 
+...
+012 (16923660.000.000) 2025-01-07 22:39:08 Job was held.
+	Transfer input files failure at access point ap21 while sending files to the execution point. Details: reading from file /home/derkula/cont5.0/env.sh: (errno 2) No such file or directory
+	Code 13 Subcode 2
+...
+000 (16923661.000.000) 2025-01-07 22:42:20 Job submitted from host: <192.170.231.142:9618?addrs=192.170.231.142-9618+[2605-9a00-10-200b-192-170-231-142]-9618&alias=ap21.uc.osg-htc.org&noUDP&sock=schedd_1761324_5782>
+...
+040 (16923661.000.000) 2025-01-07 22:43:37 Started transferring input files
+	Transferring to host: <10.138.20.5:45053?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-b5-97ed-32e2-a34b-c9a3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector9#34718434%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-6dee]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector5#15351094&PrivNet=c2005.swan.hcc.unl.edu&addrs=10.138.20.5-45053&alias=c2005.swan.hcc.unl.edu&noUDP>
+...
+040 (16923661.000.000) 2025-01-07 22:44:10 Finished transferring input files
+...
+021 (16923661.000.000) 2025-01-07 22:44:11 Message from starter on slot1@glidein_2835088_629111792@c2005.swan.hcc.unl.edu:
+	PREPARE_JOB (prepare-hook) succeeded (reported status 000): Using Singularity image cdms4.0.sif
+...
+001 (16923661.000.000) 2025-01-07 22:44:11 Job executing on host: <10.138.20.5:45009?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-b5-97ed-32e2-a34b-c9a3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector4#56299392%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-6dee]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector4#15337657&PrivNet=c2005.swan.hcc.unl.edu&addrs=10.138.20.5-45009&alias=c2005.swan.hcc.unl.edu&noUDP>
+	SlotName: slot1@c2005.swan.hcc.unl.edu
+	CondorScratchDir = "/scratch/glide_eSs6ND/execute/dir_2866160"
+	Cpus = 1
+	Disk = 36969454
+	GLIDEIN_ResourceName = "Swan-CE1"
+	GPUs = 0
+	Memory = 2000
+...
+006 (16923661.000.000) 2025-01-07 22:44:17 Image size of job updated: 2
+	4  -  MemoryUsage of job (MB)
+	3744  -  ResidentSetSize of job (KB)
+...
+040 (16923661.000.000) 2025-01-07 22:44:17 Started transferring output files
+...
+040 (16923661.000.000) 2025-01-07 22:44:17 Finished transferring output files
+...
+021 (16923661.000.000) 2025-01-07 22:44:17 Error from starter on slot1@glidein_2835088_629111792@c2005.swan.hcc.unl.edu:
+	STARTER at 10.138.20.5 failed to send file(s) to <192.170.231.142:9618>: : FILETRANSFER:1:non-zero exit (1) from /scratch/glide_eSs6ND/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /scratch/glide_eSs6ND/execute/dir_2866160/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )||FILETRANSFER:1:non-zero exit (1) from /scratch/glide_eSs6ND/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /scratch/glide_eSs6ND/execute/dir_2866160/umn_Filter_07180811_2320.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/umn_Filter_07180811_2320.root )|; SHADOW failed to receive file(s) from <129.93.227.92:44937>
+	Code 13 Subcode 256
+...
+004 (16923661.000.000) 2025-01-07 22:44:17 Job was evicted. Code 12 Subcode 256
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	691  -  Run Bytes Sent By Job
+	2319  -  Run Bytes Received By Job
+	Reason: Transfer output files failure at the execution point using protocol osdf. Details: Pelican Client Error: stat /scratch/glide_eSs6ND/execute/dir_2866160/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )||FILETRANSFER:1:non-zero exit (1) from /scratch/glide_eSs6ND/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /scratch/glide_eSs6ND/execute/dir_2866160/umn_Filter_07180811_2320.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/umn_Filter_07180811_2320.root )|
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  2142928  4194304  36969454 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        4     1024      2000 
+	   TimeExecute (s)      :        6                    
+	   TimeSlotBusy (s)     :       41                    
+...
+012 (16923661.000.000) 2025-01-07 22:44:17 Job was held.
+	Transfer output files failure at the execution point using protocol osdf. Details: Pelican Client Error: stat /scratch/glide_eSs6ND/execute/dir_2866160/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )||FILETRANSFER:1:non-zero exit (1) from /scratch/glide_eSs6ND/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /scratch/glide_eSs6ND/execute/dir_2866160/umn_Filter_07180811_2320.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/umn_Filter_07180811_2320.root )|
+	Code 12 Subcode 256
+...
+000 (16923663.000.000) 2025-01-07 22:52:30 Job submitted from host: <192.170.231.142:9618?addrs=192.170.231.142-9618+[2605-9a00-10-200b-192-170-231-142]-9618&alias=ap21.uc.osg-htc.org&noUDP&sock=schedd_1761324_5782>
+...
+040 (16923663.000.000) 2025-01-07 22:54:54 Started transferring input files
+	Transferring to host: <10.138.18.22:41577?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-b5-97ed-32e2-a34b-c9a3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector3#56405116%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-6dee]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector7#15399791&PrivNet=c1822.swan.hcc.unl.edu&addrs=10.138.18.22-41577&alias=c1822.swan.hcc.unl.edu&noUDP>
+...
+040 (16923663.000.000) 2025-01-07 22:55:13 Finished transferring input files
+...
+021 (16923663.000.000) 2025-01-07 22:55:13 Message from starter on slot1@glidein_2164796_840007374@c1822.swan.hcc.unl.edu:
+	PREPARE_JOB (prepare-hook) succeeded (reported status 000): Using Singularity image cdms4.0.sif
+...
+001 (16923663.000.000) 2025-01-07 22:55:13 Job executing on host: <10.138.18.22:41737?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-b5-97ed-32e2-a34b-c9a3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector7#34824939%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-6dee]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector1#15390943&PrivNet=c1822.swan.hcc.unl.edu&addrs=10.138.18.22-41737&alias=c1822.swan.hcc.unl.edu&noUDP>
+	SlotName: slot1@c1822.swan.hcc.unl.edu
+	CondorScratchDir = "/scratch/glide_6cVBuI/execute/dir_2255459"
+	Cpus = 1
+	Disk = 36857444
+	GLIDEIN_ResourceName = "Swan-CE1"
+	GPUs = 0
+	Memory = 2000
+...
+006 (16923663.000.000) 2025-01-07 22:55:19 Image size of job updated: 2
+	4  -  MemoryUsage of job (MB)
+	3696  -  ResidentSetSize of job (KB)
+...
+040 (16923663.000.000) 2025-01-07 22:55:19 Started transferring output files
+...
+040 (16923663.000.000) 2025-01-07 22:55:20 Finished transferring output files
+...
+021 (16923663.000.000) 2025-01-07 22:55:20 Error from starter on slot1@glidein_2164796_840007374@c1822.swan.hcc.unl.edu:
+	STARTER at 10.138.18.22 failed to send file(s) to <192.170.231.142:9618>: : FILETRANSFER:1:non-zero exit (1) from /scratch/glide_6cVBuI/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /scratch/glide_6cVBuI/execute/dir_2255459/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )||FILETRANSFER:1:non-zero exit (1) from /scratch/glide_6cVBuI/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /scratch/glide_6cVBuI/execute/dir_2255459/umn_Filter_07180811_2320.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/umn_Filter_07180811_2320.root )|; SHADOW failed to receive file(s) from <129.93.227.93:40109>
+	Code 13 Subcode 256
+...
+004 (16923663.000.000) 2025-01-07 22:55:20 Job was evicted. Code 12 Subcode 256
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	1180  -  Run Bytes Sent By Job
+	2404  -  Run Bytes Received By Job
+	Reason: Transfer output files failure at the execution point using protocol osdf. Details: Pelican Client Error: stat /scratch/glide_6cVBuI/execute/dir_2255459/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )||FILETRANSFER:1:non-zero exit (1) from /scratch/glide_6cVBuI/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /scratch/glide_6cVBuI/execute/dir_2255459/umn_Filter_07180811_2320.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/umn_Filter_07180811_2320.root )|
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  2142928  4194304  36857444 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        4     1024      2000 
+	   TimeExecute (s)      :        6                    
+	   TimeSlotBusy (s)     :       27                    
+...
+012 (16923663.000.000) 2025-01-07 22:55:20 Job was held.
+	Transfer output files failure at the execution point using protocol osdf. Details: Pelican Client Error: stat /scratch/glide_6cVBuI/execute/dir_2255459/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )||FILETRANSFER:1:non-zero exit (1) from /scratch/glide_6cVBuI/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /scratch/glide_6cVBuI/execute/dir_2255459/umn_Filter_07180811_2320.root: no such file or directory (Version: 7.11.7; Site: Swan) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/umn_Filter_07180811_2320.root )|
+	Code 12 Subcode 256
+...
+000 (16923668.000.000) 2025-01-07 23:40:02 Job submitted from host: <192.170.231.142:9618?addrs=192.170.231.142-9618+[2605-9a00-10-200b-192-170-231-142]-9618&alias=ap21.uc.osg-htc.org&noUDP&sock=schedd_1761324_5782>
+...
+040 (16923668.000.000) 2025-01-07 23:43:07 Started transferring input files
+	Transferring to host: <10.125.8.95:39031?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-b5-97ed-32e2-a34b-c9a3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector1#56270687%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-6dee]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector5#15353923&PrivNet=node1880.palmetto.clemson.edu&addrs=10.125.8.95-39031&alias=node1880.palmetto.clemson.edu&noUDP>
+...
+040 (16923668.000.000) 2025-01-07 23:43:37 Finished transferring input files
+...
+021 (16923668.000.000) 2025-01-07 23:43:38 Message from starter on slot1_1@glidein_1554320_546154158@node1880.palmetto.clemson.edu:
+	PREPARE_JOB (prepare-hook) succeeded (reported status 000): Using Singularity image cdms4.0.sif
+...
+001 (16923668.000.000) 2025-01-07 23:43:38 Job executing on host: <10.125.8.95:34757?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-b5-97ed-32e2-a34b-c9a3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector10#34439654%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-6dee]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector4#14990291&PrivNet=node1880.palmetto.clemson.edu&addrs=10.125.8.95-34757&alias=node1880.palmetto.clemson.edu&noUDP>
+	SlotName: slot1_1@node1880.palmetto.clemson.edu
+	CondorScratchDir = "/local_scratch/slurm.1525754/glide_bmoAxH/execute/dir_1032768"
+	Cpus = 1
+	Disk = 4195328
+	GLIDEIN_ResourceName = "Clemson-Palmetto-CE1"
+	GPUs = 0
+	Memory = 1024
+...
+006 (16923668.000.000) 2025-01-07 23:43:45 Image size of job updated: 2
+	7  -  MemoryUsage of job (MB)
+	6288  -  ResidentSetSize of job (KB)
+...
+040 (16923668.000.000) 2025-01-07 23:43:45 Started transferring output files
+...
+040 (16923668.000.000) 2025-01-07 23:43:46 Finished transferring output files
+...
+021 (16923668.000.000) 2025-01-07 23:43:46 Error from starter on slot1_1@glidein_1554320_546154158@node1880.palmetto.clemson.edu:
+	STARTER at 10.125.8.95 failed to send file(s) to <192.170.231.142:9618>: : FILETRANSFER:1:non-zero exit (1) from /local_scratch/slurm.1525754/glide_bmoAxH/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /local_scratch/slurm.1525754/glide_bmoAxH/execute/dir_1032768/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Clemson-Palmetto) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )||FILETRANSFER:1:non-zero exit (1) from /local_scratch/slurm.1525754/glide_bmoAxH/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /local_scratch/slurm.1525754/glide_bmoAxH/execute/dir_1032768/umn_Filter_07180811_2320.root: no such file or directory (Version: 7.11.7; Site: Clemson-Palmetto) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/umn_Filter_07180811_2320.root )|; SHADOW failed to receive file(s) from <205.186.62.252:5785>
+	Code 13 Subcode 256
+...
+004 (16923668.000.000) 2025-01-07 23:43:46 Job was evicted. Code 12 Subcode 256
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	1300  -  Run Bytes Sent By Job
+	2468  -  Run Bytes Received By Job
+	Reason: Transfer output files failure at the execution point using protocol osdf. Details: Pelican Client Error: stat /local_scratch/slurm.1525754/glide_bmoAxH/execute/dir_1032768/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Clemson-Palmetto) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )||FILETRANSFER:1:non-zero exit (1) from /local_scratch/slurm.1525754/glide_bmoAxH/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /local_scratch/slurm.1525754/glide_bmoAxH/execute/dir_1032768/umn_Filter_07180811_2320.root: no such file or directory (Version: 7.11.7; Site: Clemson-Palmetto) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/umn_Filter_07180811_2320.root )|
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.10        1         1 
+	   Disk (KB)            : 2142933     4194304   4195328 
+	   GPUs                 :                             0 
+	   Memory (MB)          :       7        1024      1024 
+	   TimeExecute (s)      :       7                       
+	   TimeSlotBusy (s)     :      39                       
+...
+012 (16923668.000.000) 2025-01-07 23:43:46 Job was held.
+	Transfer output files failure at the execution point using protocol osdf. Details: Pelican Client Error: stat /local_scratch/slurm.1525754/glide_bmoAxH/execute/dir_1032768/umn_07180811_2320_F0008.root: no such file or directory (Version: 7.11.7; Site: Clemson-Palmetto) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0008.root )||FILETRANSFER:1:non-zero exit (1) from /local_scratch/slurm.1525754/glide_bmoAxH/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: stat /local_scratch/slurm.1525754/glide_bmoAxH/execute/dir_1032768/umn_Filter_07180811_2320.root: no such file or directory (Version: 7.11.7; Site: Clemson-Palmetto) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/umn_Filter_07180811_2320.root )|
+	Code 12 Subcode 256
+...
+009 (16923668.000.000) 2025-01-08 00:02:16 Job was aborted.
+	via condor_rm (by user derkula)
+
+	Job terminated by itself at 2025-01-08T05:43:45Z (using method 0: OF_ITS_OWN_ACCORD).
+...

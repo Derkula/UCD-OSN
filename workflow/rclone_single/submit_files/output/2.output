@@ -1,0 +1,49 @@
+Start time: Tue Jan  7 23:04:35 CST 2025
+Job is running on node: c1917.swan.hcc.unl.edu
+Job running as user: uid=32016(osg) gid=4001(grid) groups=4001(grid)
+Job is running in directory: /srv
+SCRATCH DIR
+/srv
+COPIED FROM BUCKET
+_condor_stderr
+_condor_stdout
+cdms4.0.sif
+env.sh
+scratch
+test.sh
+tmp
+var_tmp
+running Data
+cdmsbats version: v5.6.5-25-g35800ef31d41dbc8d1dc83b4d25a4a89d30b194c
+BatCommon version: v5.7.3-14-g98440456a4ecd655d40026869c24e81d1c2c080e
+RawDataFilename = 07180811_2320_F0008
+
+**** Reading user settings file: /cdmsbats_singularity/UserSettings/BatRootSettings/processing/processingUMNData.HV100mm_HV1.midas
+
+**** Reading user settings file: /cdmsbats_singularity/UserSettings/BatRootSettings/analysis/configUMNData.iZIP100mm
+
+NOTE:  INFO is not being read.  Values will derive from either raw data or user settings file.
+
+NOTE:  ISR file is not being read. Values will derive from either raw data or user settings file.
+/srv/
+Noise complete, saved to
+/srv
+_condor_stderr
+_condor_stdout
+cdms4.0.sif
+env.sh
+scratch
+test.sh
+tmp
+var_tmp
+Done writing output
+/srv
+_condor_stderr
+_condor_stdout
+cdms4.0.sif
+env.sh
+scratch
+test.sh
+tmp
+var_tmp
+end script
