@@ -161,6 +161,8 @@ From: ubuntu:18.04
     #export CDMSBATSDIR= /cdmsbats_singularity
     cd cdmsbats_singularity
     make all
-
+    
+    alias s3='aws s3 --profile slac_public --endpoint-url https://maritime.sealstorage.io/api/v0/s3 --no-verify-ssl'
+    
     #export CDMSBATSDIR = /cdmsbats_singularity
 

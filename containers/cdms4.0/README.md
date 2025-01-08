@@ -1,8 +1,6 @@
-Singularity version 4.0 to include awscli.
+Singularity version 4.0 to include awscli and ROOT.
 
 The purpose is to access the public CDMS UMN data.
-
-Building ROOT is omitted for the sake of saving time to test the s3 function.
 
 
 <b>Building the Container</b>

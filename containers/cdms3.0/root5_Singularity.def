@@ -16,6 +16,7 @@ From: ubuntu:18.04
 %files
 ## copy cdmsbats into image
      cdmsbats /cdmsbats_singularity 
+     .config /.config
 
 %environment
     export ROOTSYS=/usr/local
@@ -50,9 +51,9 @@ From: ubuntu:18.04
 #use-sqlite-wal = false" > ~/.config/nix/nix.conf
 #    sh <(curl -L https://nixos.org/nix/install)
 
-    ## aws.
+    ## rclone
     apt-get update -y
-    apt-get install awscli -y   
+    apt-get install rclone -y   
 #curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
     #unzip awscliv2.zip
     #./aws/install    
