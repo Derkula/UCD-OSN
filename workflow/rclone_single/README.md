@@ -28,7 +28,7 @@ More details about each component can be found in their respective folders.
 Clone this repository, and scp tranfer the rclone_single folder into your OSG access point
 
 ```bash
-scp rclone_single USERNAME@apxx.uc.osg-htc.org:/home/USERNAME/path/to/directory/
+scp -r rclone_single USERNAME@apxx.uc.osg-htc.org:/home/USERNAME/path/to/directory/
 ```
 
 
