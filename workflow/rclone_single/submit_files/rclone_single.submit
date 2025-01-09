@@ -9,7 +9,7 @@ request_disk    = 4 GB
 
 
 #OSDF_LOCATION = osdf:///ospool/uc-shared/public/UCDenver_Roberts
-OSDF_DATA = osdf:///ospool/ap21/data/username
+OSDF_DATA = osdf:///ospool/ap21/data/username/outputs/
 
 +SingularityImage = "osdf:///ospool/uc-shared/public/UCDenver_Roberts/container/cdms3.0.sif"
 

@@ -20,7 +20,7 @@ echo $_CONDOR_SCRATCH_DIR
 #echo $CDMSBATSDIR
 #ls $CDMSBATSDIR
 
-source env.sh
+source env3.sh
 
 #echo CURRENT DIRECTORY
 #pwd

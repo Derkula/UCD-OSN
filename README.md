@@ -6,4 +6,7 @@ Always refer to the [OSPool Documentation](https://portal.osg-htc.org/documentat
 
 ### [Setup](https://github.com/Derkula/UCD-OSN-/tree/main/Get%20Started) 
 
-### [Single Batch Jobs](https://github.com/Derkula/UCD-OSN-/tree/main/workflow/single_run)
+### [Single Hardcoded Jobs](https://github.com/Derkula/UCD-OSN-/tree/main/workflow/single_run)
+
+### [Single Rclone Job](https://github.com/Derkula/UCD-OSN/tree/main/workflow/rclone_single)
+
