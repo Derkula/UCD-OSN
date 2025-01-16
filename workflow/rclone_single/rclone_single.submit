@@ -1,0 +1,42 @@
+universe = vanilla
+
+# Change this number to organize the log, error, and output files
+Process = 001
+
+# System resources, adjust as needed. For this job this will suffice
+Requirements    = HAS_SINGULARITY == TRUE
+request_cpus    = 1
+request_memory  = 1 GB
+request_disk    = 4 GB
+
+# Creating variables to access OSDF directories
+#OSDF_LOCATION = osdf:///ospool/uc-shared/public/UCDenver_Roberts
+OSDF_DATA = $DATA
+
+
+# Accessing and utililizing the cdms3.0.sif container from the public directory
++SingularityImage = "osdf:///ospool/uc-shared/public/UCDenver_Roberts/container/cdms3.0.sif"
+
+# exectute job's command script
+executable = test.sh
+
+# bring needed files in from access point. For this job only env3.sh is needed
+transfer_input_files    = env3.sh
+
+# stage and direct files to be transferred out after processing is complete
+transfer_output_files   = umn_Filter_07180811_2320.root, umn_07180811_2320_F0008.root
+transfer_output_remaps  = "umn_Filter_07180811_2320.root = $(OSDF_DATA)/single/noise/umn_Filter_07180811_2320.root; umn_07180811_2320_F0008.root = $(OSDF_DATA)/single/raw/umn_07180811_2320_F0008.root"
+
+
+# organizing output files
+log    = logs/$(Process).log
+error  = error/$(Process).error
+output = output/$(Process).output
+
+# standard duration 
++JobDurationCategory = "Medium"
+
+
+# The last line of a submit file indicates how many jobs to run
+queue 1
+
