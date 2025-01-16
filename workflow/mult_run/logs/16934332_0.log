@@ -1,0 +1,103 @@
+000 (16934332.000.000) 2025-01-15 12:15:18 Job submitted from host: <192.170.231.142:9618?addrs=192.170.231.142-9618+[2605-9a00-10-200b-192-170-231-142]-9618&alias=ap21.uc.osg-htc.org&noUDP&sock=schedd_1761324_5782>
+...
+040 (16934332.000.000) 2025-01-15 12:17:25 Started transferring input files
+	Transferring to host: <10.139.126.231:44397?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-a5-3ce5-3e0f-69a9-89e3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector9#35755307%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-f25a]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector1#16427238&PrivNet=sg231&addrs=10.139.126.231-44397&alias=sg231&noUDP>
+...
+040 (16934332.000.000) 2025-01-15 12:18:30 Finished transferring input files
+...
+021 (16934332.000.000) 2025-01-15 12:18:34 Message from starter on slot1_24@glidein_2719754_339577568@sg231:
+	PREPARE_JOB (prepare-hook) succeeded (reported status 000): Using Singularity image cdms3.0.sif
+...
+001 (16934332.000.000) 2025-01-15 12:18:34 Job executing on host: <10.139.126.231:42739?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-a5-3ce5-3e0f-69a9-89e3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector6#35631592%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-f25a]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector2#16296321&PrivNet=sg231&addrs=10.139.126.231-42739&alias=sg231&noUDP>
+	SlotName: slot1_24@sg231
+	CondorScratchDir = "/scratch/osg/osg01/glide_j7Ku6W/execute/dir_508099"
+	Cpus = 1
+	Disk = 4313829
+	GLIDEIN_ResourceName = "ASU-Sol-CE1"
+	GPUs = 0
+	Memory = 1024
+...
+006 (16934332.000.000) 2025-01-15 12:18:46 Image size of job updated: 4156332
+	66  -  MemoryUsage of job (MB)
+	66856  -  ResidentSetSize of job (KB)
+...
+006 (16934332.000.000) 2025-01-15 12:23:46 Image size of job updated: 4513388
+	445  -  MemoryUsage of job (MB)
+	455104  -  ResidentSetSize of job (KB)
+...
+006 (16934332.000.000) 2025-01-15 12:28:30 Image size of job updated: 4991200
+	445  -  MemoryUsage of job (MB)
+	455104  -  ResidentSetSize of job (KB)
+...
+040 (16934332.000.000) 2025-01-15 12:30:43 Started transferring output files
+...
+040 (16934332.000.000) 2025-01-15 12:31:00 Finished transferring output files
+...
+021 (16934332.000.000) 2025-01-15 12:31:01 Error from starter on slot1_24@glidein_2719754_339577568@sg231:
+	STARTER at 10.139.126.231 failed to send file(s) to <192.170.231.142:9618>: : FILETRANSFER:1:non-zero exit (11) from /scratch/osg/osg01/glide_j7Ku6W/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: failed upload to ap21.uc.osg-htc.org:1095: net/http: TLS handshake timeout (15.5s since start) (Version: 7.11.7; Site: ASU-Sol) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/F0002/umn_Filter_07180811_2320.root )||FILETRANSFER:1:non-zero exit (11) from /scratch/osg/osg01/glide_j7Ku6W/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: failed upload to ap21.uc.osg-htc.org:1095: net/http: TLS handshake timeout (15.4s since start) (Version: 7.11.7; Site: ASU-Sol) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0002.root )|; SHADOW failed to receive file(s) from <206.206.198.5:37597>
+	Code 13 Subcode 2816
+...
+004 (16934332.000.000) 2025-01-15 12:31:01 Job was evicted. Code 12 Subcode 2816
+	(0) CPU times
+		Usr 0 00:07:19, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	4526687  -  Run Bytes Sent By Job
+	2586  -  Run Bytes Received By Job
+	Reason: Transfer output files failure at execution point slot1_24@glidein_2719754_339577568@sg231 using protocol osdf. Details: Pelican Client Error: failed upload to ap21.uc.osg-htc.org:1095: net/http: TLS handshake timeout (15.5s since start) (Version: 7.11.7; Site: ASU-Sol) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/noise/F0002/umn_Filter_07180811_2320.root )||FILETRANSFER:1:non-zero exit (11) from /scratch/osg/osg01/glide_j7Ku6W/main/condor/libexec/stash_plugin. |Error: Pelican Client Error: failed upload to ap21.uc.osg-htc.org:1095: net/http: TLS handshake timeout (15.4s since start) (Version: 7.11.7; Site: ASU-Sol) ( URL file = osdf:///ospool/ap21/data/derkula/outputs/raw/umn_07180811_2320_F0002.root )|
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.94        1         1 
+	   Disk (KB)            : 2511597     4194304   4313829 
+	   GPUs                 :                             0 
+	   Memory (MB)          :     445        1024      1024 
+	   TimeExecute (s)      :     727                       
+	   TimeSlotBusy (s)     :     819                       
+...
+040 (16934332.000.000) 2025-01-15 12:39:02 Started transferring input files
+	Transferring to host: <149.165.224.83:43303?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-a5-3ce5-3e0f-69a9-89e3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector4#57336923%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-f25a]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector2#16457210&PrivNet=iut2-c383.iu.edu&addrs=149.165.224.83-43303+[2001-18e8-c02-5-5e6f-69ff-feb7-660]-43303&alias=iut2-c383.iu.edu&noUDP>
+...
+040 (16934332.000.000) 2025-01-15 12:39:10 Finished transferring input files
+...
+021 (16934332.000.000) 2025-01-15 12:39:11 Message from starter on slot1_8@glidein_1408858_613148690@iut2-c383.iu.edu:
+	PREPARE_JOB (prepare-hook) succeeded (reported status 000): Using Singularity image cdms3.0.sif
+...
+001 (16934332.000.000) 2025-01-15 12:39:11 Job executing on host: <149.165.224.83:35791?CCBID=128.105.82.148:9618%3faddrs%3d128.105.82.148-9618+[2607-f388-2200-a5-3ce5-3e0f-69a9-89e3]-9618%26alias%3dospool-ccb.osg.chtc.io%26noUDP%26sock%3dcollector7#35819415%20192.170.231.11:9618%3faddrs%3d192.170.231.11-9618+[fd85-ee78-d8a6-8607--1-f25a]-9618%26alias%3dospool-ccb.osgprod.tempest.chtc.io%26noUDP%26sock%3dcollector1#16385593&PrivNet=iut2-c383.iu.edu&addrs=149.165.224.83-35791+[2001-18e8-c02-5-5e6f-69ff-feb7-660]-35791&alias=iut2-c383.iu.edu&noUDP>
+	SlotName: slot1_8@iut2-c383.iu.edu
+	CondorScratchDir = "/var/lib/condor/execute/dir_1408661/glide_OLM8B0/execute/dir_2233209"
+	Cpus = 1
+	Disk = 4196644
+	GLIDEIN_ResourceName = "MWT2"
+	GPUs = 0
+	Memory = 1024
+...
+006 (16934332.000.000) 2025-01-15 12:44:20 Image size of job updated: 5000000
+	613  -  MemoryUsage of job (MB)
+	627472  -  ResidentSetSize of job (KB)
+...
+006 (16934332.000.000) 2025-01-15 12:47:14 Image size of job updated: 5147240
+	613  -  MemoryUsage of job (MB)
+	627472  -  ResidentSetSize of job (KB)
+...
+040 (16934332.000.000) 2025-01-15 12:47:14 Started transferring output files
+...
+040 (16934332.000.000) 2025-01-15 12:47:15 Finished transferring output files
+...
+005 (16934332.000.000) 2025-01-15 12:47:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:07:02, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:14:21, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	4526691  -  Run Bytes Sent By Job
+	2586  -  Run Bytes Received By Job
+	9053378  -  Total Bytes Sent By Job
+	5172  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.98        1         1 
+	   Disk (KB)            : 2511604     4194304   4196644 
+	   GPUs                 :                             0 
+	   Memory (MB)          :     613        1024      1024 
+	   TimeExecute (s)      :     483                       
+	   TimeSlotBusy (s)     :     493                       
+
+	Job terminated of its own accord at 2025-01-15T18:47:14Z with exit-code 0.
+...

@@ -1,0 +1,46 @@
+universe = vanilla
+
+## INFO
+#using container: cdms3.0.sif 
+# rclone to acesss data from the s3 bucket, pulling multiple data sets from one job cluster
+
+# System requirements, adjust as needed. These presets will suffice for 3 jobs
+Requirements    = HAS_SINGULARITY == TRUE
+request_cpus    = 1
+request_memory  = 4 GB
+request_disk    = 4 GB
+
+# Declaring environment variables for OSDF directories
+#OSDF_LOCATION = osdf:///ospool/uc-shared/public/UCDenver_Roberts
+OSDF_DATA = $DATA
+
+# Access and utilize the cdms3.0,sif container
++SingularityImage = "osdf:///ospool/uc-shared/public/UCDenver_Roberts/container/cdms3.0.sif"
+
+# job process starts from 0. Declare a NewProcess to start processing from F0002
+plustwo = $(Process) + 2
+NewProcess = $INT(plustwo,%d)
+
+# job execution script, and pass argument to associate with dataset F000#
+executable = test.sh
+arguments = $(NewProcess)
+
+# Transfer in needed files from access point. For now, only using env3.sh, but in the future
+# another file will be used for designating which datasets to use 
+transfer_input_files    = env3.sh
+
+# Stage and direct files to be transferred out after processing is complete
+transfer_output_files   = umn_Filter_07180811_2320.root, umn_07180811_2320_F000$(NewProcess).root
+transfer_output_remaps  = "umn_Filter_07180811_2320.root = $(OSDF_DATA)/outputs/noise/07180811_2320_F000$(NewProcess)/umn_Filter_07180811_2320.root; umn_07180811_2320_F000$(NewProcess).root = $(OSDF_DATA)/outputs/raw/umn_07180811_2320_F000$(NewProcess).root"
+
+# Organizing output files
+log    = logs/$(Cluster)_$(Process).log
+error  = error/$(Cluster)_$(Process).error
+output = output/$(Cluster)_$(Process).output
+
+# Default duration
++JobDurationCategory = "Medium"
+
+
+# The last line of a submit file indicates how many jobs to run. Maximum 7
+queue 3

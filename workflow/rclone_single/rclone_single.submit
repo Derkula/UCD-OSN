@@ -24,6 +24,7 @@ executable = test.sh
 transfer_input_files    = env3.sh
 
 # stage and direct files to be transferred out after processing is complete
+# change data sets here as needed
 transfer_output_files   = umn_Filter_07180811_2320.root, umn_07180811_2320_F0008.root
 transfer_output_remaps  = "umn_Filter_07180811_2320.root = $(OSDF_DATA)/single/noise/umn_Filter_07180811_2320.root; umn_07180811_2320_F0008.root = $(OSDF_DATA)/single/raw/umn_07180811_2320_F0008.root"
 
