@@ -4,6 +4,7 @@ The purpose is to access the public CDMS UMN data.
 
 The container builds with the cdmsbats UMNDev branch, ROOT, and rclone.
 
+ROOT version 5.34.38
 
 <b>Building the Container</b>
 
